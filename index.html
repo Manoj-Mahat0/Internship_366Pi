@@ -4,64 +4,789 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post - Daily Work Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+     padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .post {
+            margin-left: 40px;
+        }
+
+        .post-title {
+           margin-left: 30px;
+        }
+
+        .post-content {
+            margin-left: 30px;
+        }
+
+        .container {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .sidebar {
+            position: fixed;
+            /* or use position: absolute; */
+            top: 0;
+            left: 0;
+            width: 20%;
+            background-color: #001b6d;
+            color: #fff;
+     padding: 20px;
+           height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+        .sidebar li a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+
+        .sidebar li a:hover {
+            color: #ff9900;
+        }
+
+        .sidebar .submenu {
+            margin-left: 10px;
+            display: none;
+            list-style: none;
+            padding-left: 15px;
+        }
+
+        .sidebar li:hover .submenu{
+            display: block;
+        }
+
+        .post {
+            margin-left: 20%;
+            /* Match the sidebar width */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(15, 0, 0, 0.1);
+        }
+    </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8;">
-    
-    <div style="width: 100%; padding: 20px;">
-        <div style="position: fixed; top: 0; left: 0; width: 20%; background-color: #333; color: #fff; padding: 20px; height: 100vh; overflow-y: auto;">
-            <ul style="list-style: none; padding: 0;">
-                <li><a href="#" style="text-decoration: none; color: #fff; transition: color 0.3s;">August-4-2023</a>
-                    <ul style="margin-left: 10px; display: none; list-style: none; padding-left: 15px;">
-                        <li><a href="#daily-goals" style="text-decoration: none; color: #fff;">Daily Goals</a></li>
-                        <li><a href="#information-gathering" style="text-decoration: none; color: #fff;">Information Gathering</a></li>
-                        <li><a href="#setup-instructions" style="text-decoration: none; color: #fff;">Setup Instructions</a></li>
-                        <li><a href="#usages" style="text-decoration: none; color: #fff;">Usages</a></li>
-                        <li><a href="#work-progress" style="text-decoration: none; color: #fff;">Work Progress</a></li>
-                        <li><a href="#acknowledgments" style="text-decoration: none; color: #fff;">Acknowledgments</a></li>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">August-25-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals25">Daily Goals</a></li>
+                        <li><a href="#information-gathering25">Information Gathering</a></li>
+                        <li><a href="#setup-instructions25">Setup Instructions</a></li>
+                        <li><a href="#usages25">Usages</a></li>
+                        <li><a href="#work-progress25">Work Progress</a></li>
+                        <li><a href="#acknowledgments25">Acknowledgments</a></li>
+                    </ul>
+                </li><li><a href="#">August-24-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals24">Daily Goals</a></li>
+                        <li><a href="#information-gathering24">Information Gathering</a></li>
+                        <li><a href="#setup-instructions24">Setup Instructions</a></li>
+                        <li><a href="#usages24">Usages</a></li>
+                        <li><a href="#work-progress24">Work Progress</a></li>
+                        <li><a href="#acknowledgments24">Acknowledgments</a></li>
+                    </ul>
+                </li><li><a href="#">August-23-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals23">Daily Goals</a></li>
+                        <li><a href="#information-gathering23">Information Gathering</a></li>
+                        <li><a href="#setup-instructions23">Setup Instructions</a></li>
+                        <li><a href="#usages23">Usages</a></li>
+                        <li><a href="#work-progress23">Work Progress</a></li>
+                        <li><a href="#acknowledgments23">Acknowledgments</a></li>
                     </ul>
                 </li>
-                <li><a href="#" style="text-decoration: none; color: #fff; transition: color 0.3s;">August-5-2023</a>
-                    <ul style="margin-left: 10px; display: none; list-style: none; padding-left: 15px;">
-                        <li><a href="#daily-goals" style="text-decoration: none; color: #fff;">Daily Goals</a></li>
-                        <li><a href="#information-gathering" style="text-decoration: none; color: #fff;">Information Gathering</a></li>
-                        <li><a href="#setup-instructions" style="text-decoration: none; color: #fff;">Setup Instructions</a></li>
-                        <li><a href="#usages" style="text-decoration: none; color: #fff;">Usages</a></li>
-                        <li><a href="#work-progress" style="text-decoration: none; color: #fff;">Work Progress</a></li>
-                        <li><a href="#acknowledgments" style="text-decoration: none; color: #fff;">Acknowledgments</a></li>
+                <li><a href="#">August-22-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals22">Daily Goals</a></li>
+                        <li><a href="#information-gathering22">Information Gathering</a></li>
+                        <li><a href="#setup-instructions22">Setup Instructions</a></li>
+                        <li><a href="#usages22">Usages</a></li>
+                        <li><a href="#work-progress22">Work Progress</a></li>
+                        <li><a href="#acknowledgments22">Acknowledgments</a></li>
                     </ul>
                 </li>
-                <li><a href="#" style="text-decoration: none; color: #fff; transition: color 0.3s;">August-6-2023</a>
-                    <ul style="margin-left: 10px; display: none; list-style: none; padding-left: 15px;">
-                        <li><a href="#daily-goals" style="text-decoration: none; color: #fff;">Daily Goals</a></li>
-                        <li><a href="#information-gathering" style="text-decoration: none; color: #fff;">Information Gathering</a></li>
-                        <li><a href="#setup-instructions" style="text-decoration: none; color: #fff;">Setup Instructions</a></li>
-                        <li><a href="#usages" style="text-decoration: none; color: #fff;">Usages</a></li>
-                        <li><a href="#work-progress" style="text-decoration: none; color: #fff;">Work Progress</a></li>
-                        <li><a href="#acknowledgments" style="text-decoration: none; color: #fff;">Acknowledgments</a></li>
+                <li><a href="#">August-21-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals21">Daily Goals</a></li>
+                        <li><a href="#information-gathering21">Information Gathering</a></li>
+                        <li><a href="#setup-instructions21">Setup Instructions</a></li>
+                        <li><a href="#usages21">Usages</a></li>
+                        <li><a href="#work-progress21">Work Progress</a></li>
+                        <li><a href="#acknowledgments21">Acknowledgments</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">August-18-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals18">Daily Goals</a></li>
+                        <li><a href="#information-gathering18">Information Gathering</a></li>
+                        <li><a href="#setup-instructions18">Setup Instructions</a></li>
+                        <li><a href="#usages18">Usages</a></li>
+                        <li><a href="#work-progress18">Work Progress</a></li>
+                        <li><a href="#acknowledgments18">Acknowledgments</a></li>
+                    </ul>
+                </li><li><a href="#">August-17-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals17">Daily Goals</a></li>
+                        <li><a href="#information-gathering17">Information Gathering</a></li>
+                        <li><a href="#setup-instructions17">Setup Instructions</a></li>
+                        <li><a href="#usages17">Usages</a></li>
+                        <li><a href="#work-progress17">Work Progress</a></li>
+                        <li><a href="#acknowledgments17">Acknowledgments</a></li>
+                    </ul>
+                </li><li><a href="#">August-16-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals16">Daily Goals</a></li>
+                        <li><a href="#information-gathering16">Information Gathering</a></li>
+                        <li><a href="#setup-instructions16">Setup Instructions</a></li>
+                        <li><a href="#usages16">Usages</a></li>
+                        <li><a href="#work-progress16">Work Progress</a></li>
+                        <li><a href="#acknowledgments16">Acknowledgments</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">August-15-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals15">Daily Goals</a></li>
+                        <li><a href="#information-gathering15">Information Gathering</a></li>
+                        <li><a href="#setup-instructions15">Setup Instructions</a></li>
+                        <li><a href="#usages15">Usages</a></li>
+                        <li><a href="#work-progress15">Work Progress</a></li>
+                        <li><a href="#acknowledgments15">Acknowledgments</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">August-14-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals14">Daily Goals</a></li>
+                        <li><a href="#information-gathering14">Information Gathering</a></li>
+                        <li><a href="#setup-instructions14">Setup Instructions</a></li>
+                        <li><a href="#usages14">Usages</a></li>
+                        <li><a href="#work-progress14">Work Progress</a></li>
+                        <li><a href="#acknowledgments14">Acknowledgments</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">August-11-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals11">Daily Goals</a></li>
+                        <li><a href="#information-gathering11">Information Gathering</a></li>
+                        <li><a href="#setup-instructions11">Setup Instructions</a></li>
+                        <li><a href="#usages11">Usages</a></li>
+                        <li><a href="#work-progress11">Work Progress</a></li>
+                        <li><a href="#acknowledgments11">Acknowledgments</a></li>
+                    </ul>
+                </li><li><a href="#">August-10-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals10">Daily Goals</a></li>
+                        <li><a href="#information-gathering10">Information Gathering</a></li>
+                        <li><a href="#setup-instructions10">Setup Instructions</a></li>
+                        <li><a href="#usages10">Usages</a></li>
+                        <li><a href="#work-progress10">Work Progress</a></li>
+                        <li><a href="#acknowledgments10">Acknowledgments</a></li>
+                    </ul>
+                </li><li><a href="#">August-9-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals9">Daily Goals</a></li>
+                        <li><a href="#information-gathering9">Information Gathering</a></li>
+                        <li><a href="#setup-instructions9">Setup Instructions</a></li>
+                        <li><a href="#usages9">Usages</a></li>
+                        <li><a href="#work-progress9">Work Progress</a></li>
+                        <li><a href="#acknowledgments9">Acknowledgments</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">August-8-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals8">Daily Goals</a></li>
+                        <li><a href="#information-gathering8">Information Gathering</a></li>
+                        <li><a href="#setup-instructions8">Setup Instructions</a></li>
+                        <li><a href="#usages8">Usages</a></li>
+                        <li><a href="#work-progress8">Work Progress</a></li>
+                        <li><a href="#acknowledgments8">Acknowledgments</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">August-7-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals7">Daily Goals</a></li>
+                        <li><a href="#information-gathering7">Information Gathering</a></li>
+                        <li><a href="#setup-instructions7">Setup Instructions</a></li>
+                        <li><a href="#usages7">Usages</a></li>
+                        <li><a href="#work-progress7">Work Progress</a></li>
+                        <li><a href="#acknowledgments7">Acknowledgments</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">August-4-2023</a>
+                    <ul class="submenu">
+                        <li><a href="#daily-goals">Daily Goals</a></li>
+                        <li><a href="#information-gathering">Information Gathering</a></li>
+                        <li><a href="#setup-instructions">Setup Instructions</a></li>
+                        <li><a href="#usages">Usages</a></li>
+                        <li><a href="#work-progress">Work Progress</a></li>
+                        <li><a href="#acknowledgments">Acknowledgments</a></li>
                     </ul>
                 </li>
                 <!-- Add more dates here -->
             </ul>
         </div>
-        <div style="margin-left: 20%; background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-            <h2 style="margin-left: 30px;" id="daily-goals">Daily Work Report - August-4-2023</h2>
-            <div style="margin-left: 30px;">
-                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and plans for each day as I learn and work on Software Testing. The goal is to track my daily achievements and share my learning journey with the community.</p>
-                
-                
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals25">Daily Work Report - August-25-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
                 <p>Tasks Completed:</p>
                 <ul>
-                    <li>Learning Performance Testing</li>
-                    <li>learn Load Testing</li>
+                    <li>App Test Planter And Flocard Merg</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+
+                <h3 id="work-progress25">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments25">Acknowledgments</h3>
+                <p>I would like to thank Ashish Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals24">Daily Work Report - August-24-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Flocard app test using c# Appium test</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering24">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions24">Setup Instructions</h3>
+                <p>Appium</p>
+                <p>Visual Studio</p>
+
+
+                <h3 id="work-progress24">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments24">Acknowledgments</h3>
+                <p>I would like to thank Ashish Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals23">Daily Work Report - August-23-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Flocard app test using c# Appium test</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering23">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions23">Setup Instructions</h3>
+                <p>Appium</p>
+                <p>Visual Studio</p>
+
+
+                <h3 id="work-progress23">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments23">Acknowledgments</h3>
+                <p>I would like to thank Ashish Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals22">Daily Work Report - August-22-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Write Test Case</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering22">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions22">Setup Instructions</h3>
+                <p>Excel</p>
+
+
+                <h3 id="work-progress22">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments22">Acknowledgments</h3>
+                <p>I would like to thank Ashish Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals21">Daily Work Report - August-21-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Automation testing Flocard Web</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering21">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions21">Setup Instructions</h3>
+                <p>Visual Studio</p>
+
+
+                <h3 id="work-progress21">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments21">Acknowledgments</h3>
+                <p>I would like to thank Ashish Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals18">Daily Work Report - August-18-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Test Case</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering18">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions18">Setup Instructions</h3>
+                <p>Excel</p>
+
+                
+            
+
+                <h3 id="work-progress18">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments18">Acknowledgments</h3>
+                <p>I would like to thank Ashish Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals17">Daily Work Report - August-17-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Block Chain</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering17">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions17">Setup Instructions</h3>
+                <p>Solidatry</p>
+
+                <h1 id="usages17">Usages</h1>
+                <p>To Create Blockchain Project</p>
+            
+
+                <h3 id="work-progress17">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments17">Acknowledgments</h3>
+                <p>I would like to thank Ashish Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals16">Daily Work Report - August-16-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Perfomance Testing</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering16">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions16">Setup Instructions</h3>
+                <p>J Meter</p>
+
+                <h1 id="usages16">Usages</h1>
+                <p>To Test Load Capacity Of Any Website</p>
+            
+
+                <h3 id="work-progress16">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments16">Acknowledgments</h3>
+                <p>I would like to thank Ashish Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals15">Daily Work Report - August-15-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Kotlin</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering15">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions15">Setup Instructions</h3>
+                <p>Android Studio</p>
+
+                <h1 id="usages15">Usages</h1>
+                <p>To Create Applicatin</p>
+            
+
+                <h3 id="work-progress15">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments15">Acknowledgments</h3>
+                <p>I would like to thank Ashish Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals14">Daily Work Report - August-14-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Automation Testing</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering14">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions14">Setup Instructions</h3>
+                <p>Appium</p>
+                <p>Visual Studio</p>
+
+                <h1 id="usages14">Usages</h1>
+                <p>Automation Testing </p>
+                
+
+                <h3 id="work-progress14">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments14">Acknowledgments</h3>
+                <p>I would like to thank Abhijeet Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals11">Daily Work Report - August-11-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Performance Testing</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering11">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions11">Setup Instructions</h3>
+                <p>Apache J-Meter</p>
+
+                <h1 id="usages11">Usages</h1>
+                <p>Load Testing </p>
+                <ul>
+                    <li>Load Testing</li>
+                    <li>Perfomance Testing</li>
+                </ul>
+
+                <h3 id="work-progress11">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments11">Acknowledgments</h3>
+                <p>I would like to thank Abhijeet Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals10">Daily Work Report - August-10-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Block-Chain </li>
+                    <li>Solidatry</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering10">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions10">Setup Instructions</h3>
+                <p>Blockchain</p>
+                <p>IPFS</p>
+
+                <h3 id="usages10">Usages</h3>
+                <p>How Use Block-Chain </p>
+                <ul>
+                    <li>To Know About Blockchain</li>
+                    <li>Create Block Chain projects</li>
+                </ul>
+
+                <h3 id="work-progress10">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments10">Acknowledgments</h3>
+                <p>I would like to thank Abhijeet Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals9">Daily Work Report - August-9-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Writing Test Case For Web</li>
+                    <li>Writing Test Case For Application</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering9">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions9">Setup Instructions</h3>
+                <p>Excel</p>
+
+                <h3 id="usages9">Usages</h3>
+                <p>To Improve Function of Any App  </p>
+                <ul>
+                    <li>It Tell What We Use In Testing</li>
+                    <li>What Data We Entered While Testing</li>
+                </ul>
+
+                <h3 id="work-progress9">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments9">Acknowledgments</h3>
+                <p>I would like to thank Abhijeet Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals8">Daily Work Report - August-8-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Explore API Testing</li>
+                    <li>Postman</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                
+
+                <h3 id="information-gathering8">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions8">Setup Instructions</h3>
+                <p>Postman</p>
+
+                <h3 id="usages8">Usages</h3>
+                <p>How Endpoint Work in Api </p>
+                <ul>
+                    <li>To Know Post Methods</li>
+                    <li>To Know Get Methods</li>
+                </ul>
+
+                <h3 id="work-progress8">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments8">Acknowledgments</h3>
+                <p>I would like to thank Abhijeet Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals">Daily Work Report - August-4-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Web Automation Testing</li>
                     <li>write Selenium C# Automation Test Planter Web</li>
                     <li>Test Assigned Ticked On 366pi Project Management Portal</li>
                 </ul>
-                <p>Plans for Tomorrow:</p>
-                <ul>
-                    <li>Write Test Case For Community Management</li>
-                    <li>Learn Devops</li>
-                    <li>Learn API Testing</li>
-                </ul>
+                
 
                 <h3 id="information-gathering">Information Gathering</h3>
                 <p>I gather information through:</p>
@@ -83,10 +808,62 @@
                 <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
 
                 <h3 id="acknowledgments">Acknowledgments</h3>
-                <p>I would like to thank Abhijeet Sir for their invaluable support and guidance in my learning journey.</p>
+                <p>I would like to thank Abhijeet Sir for their invaluable support and guidance in my learning journey.
+                </p>
+            </div>
+        </div>
+
+        <div class="post">
+            <h2 class="post-title" id="daily-goals7">Daily Work Report - August-7-2023</h2>
+            <div class="post-content">
+                <p>This repository contains my daily work reports, where I document my progress, tasks completed, and
+                    plans for each day as I learn and work on Software Testing. The goal is to track my daily
+                    achievements and share my learning journey with the community.</p>
+
+
+                <p>Tasks Completed:</p>
+                <ul>
+                    <li>Learning Performance Testing</li>
+                    <li>learn Load Testing</li>
+                    <li>write Selenium C# Automation Test Planter Web</li>
+                    <li>Test Assigned Ticked On 366pi Project Management Portal</li>
+                </ul>
+                <p>Plans for Tomorrow:</p>
+                <ul>
+                    <li>Write Test Case For Community Management</li>
+                    <li>Learn Devops</li>
+                    <li>Learn API Testing</li>
+                </ul>
+
+                <h3 id="information-gathering7">Information Gathering</h3>
+                <p>I gather information through:</p>
+                <ul>
+                    <li>Online research and tutorials</li>
+                    <li>Youtube</li>
+                </ul>
+
+                <h3 id="setup-instructions7">Setup Instructions</h3>
+                <p>I don't have to install any software for this because I already installed it</p>
+
+                <h3 id="usages7">Usages</h3>
+                <p>Performance Testing can be used for:</p>
+                <ul>
+                    <li>Test Flocard and planter App</li>
+                </ul>
+
+                <h3 id="work-progress7">Work Progress</h3>
+                <p>Progress 1 Progress 2 [Add any other images or visual representations]</p>
+
+                <h3 id="acknowledgments7">Acknowledgments</h3>
+                <p>I would like to thank Abhijeet Sir for their invaluable support and guidance in my learning journey.
+                </p>
             </div>
         </div>
     </div>
-    
+
+    </div>
+    </div>
+
 </body>
+
 </html>
